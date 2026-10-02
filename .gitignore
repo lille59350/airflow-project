@@ -1,0 +1,12 @@
+# Variables d'environnement et secrets
+.env
+
+# Logs générés par Airflow
+logs/
+
+# Fichiers Python temporaires
+__pycache__/
+*.pyc
+
+# Données utilisées/générées par les pipelines
+data/
