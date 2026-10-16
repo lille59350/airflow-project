@@ -8,6 +8,8 @@ from pipeline_clients.extraction import extract_files
 from pipeline_clients.quality import control_files
 from pipeline_clients.loading import load_postgresql
 
+# # dags/pipeline_load_csv.py : orchestration de notre pipeline Airflow
+
 with DAG(
     dag_id="pipeline_load_csv",
     start_date=datetime(2026, 9, 25),
