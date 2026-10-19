@@ -10,3 +10,11 @@ __pycache__/
 
 # Données utilisées/générées par les pipelines
 data/
+
+# Minio Licence
+secrets/
+# Sauvegardes PostgreSQL locales
+*.dump
+
+# Sauvegardes temporaires de configuration
+*.bak
