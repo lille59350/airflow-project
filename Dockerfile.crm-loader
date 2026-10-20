@@ -1,0 +1,14 @@
+# Utilise une image Python 3.12 légère
+FROM python:3.12-slim
+
+#Définit le répertoire de travail
+WORKDIR /app
+
+# Ajoute les dépendances dans l'image
+COPY scripts/data_generation/requirements.txt /app/requirements.txt
+
+# Installe Psycopg 3
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Ajoute nos scripts Python
+COPY scripts/ /app/scripts/

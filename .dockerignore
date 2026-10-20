@@ -1,0 +1,21 @@
+# Secrets et configuration sensible
+.env
+.env.*
+!.env.example
+secrets/
+
+# Environnements et caches Python
+.venv/
+**/__pycache__/
+**/*.pyc
+
+# Données et journaux
+data/
+logs/
+
+# Sauvegardes
+*.dump
+*.bak
+
+# Métadonnées Git
+.git/
